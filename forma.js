@@ -32,10 +32,8 @@ async function sendData(data) {
         if(response.ok){
             alert('Данные отправлены')
             }
-        else{
-            alert('Ошибка')
-        }
         }) 
-        .catch(error => console.log(error));
+        .catch(error => {console.log(error)
+                alert('Ошибка')});
 
 }
