@@ -4,9 +4,8 @@ $(document).ready(function(){
 
     document.querySelector('#close').onclick = function () {
         document.querySelector('dialog').close() 
-        document.querySelector('dialog').style.display = 'none'
+        $('dialog').hide()
     }
-
 
     $('.btn-warning').click(function(){ 
         if ($(".container1__block").is(":visible")){
@@ -17,9 +16,7 @@ $(document).ready(function(){
         }   
     }) 
 
-
     $('.btn-success').click(function(){
-        // console.log(($('.blue')).next())
         if ($('.blue').next().is($('.pink'))){
             $('.blue').before($('.pink'));
         }
